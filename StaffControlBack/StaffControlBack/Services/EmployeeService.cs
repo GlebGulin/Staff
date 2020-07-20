@@ -54,7 +54,9 @@ namespace Services
         }
         public bool Add(Employee model)
         {
-            var emp = _db.employees.Where(x => x.Name.Equals(model.Name) && x.Surname.Equals(model.Surname)).FirstOrDefault();
+            var emp = _db.employees.Where(x => x.Name.Equals(model.Name) && 
+                x.Surname.Equals(model.Surname) &&
+                x.PositionId.Equals(model.PositionId)).FirstOrDefault();
 
             if (emp == null)
             {
