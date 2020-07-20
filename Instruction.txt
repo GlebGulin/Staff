@@ -8,6 +8,6 @@ StaffControlBack
 6. Запустить проект на выполнение (откроется страница браузера с первоначальными данными в формате json)
 
 StaffControllFront
-1. Отркыть папку StaffControl в npm консоле или Visual Code
+1. Отркыть папку StaffControlFront в npm консоле или Visual Code
 2. Произвести установку пакетов node_modules командой npm install
 3. Произвести звпуск проекта командой npm run dev
