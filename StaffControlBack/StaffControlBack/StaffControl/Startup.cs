@@ -25,8 +25,8 @@ namespace StaffControl
         public void ConfigureServices(IServiceCollection services)
         {
             string connection = Configuration.GetConnectionString("DefaultConnection");
-            //services.AddDbContext<DB>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("Binding")));
-            services.AddDbContext<DB>(options => options.UseNpgsql(connection, b => b.MigrationsAssembly("Binding")));
+            services.AddDbContext<DB>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("Binding")));
+            //services.AddDbContext<DB>(options => options.UseNpgsql(connection, b => b.MigrationsAssembly("Binding")));
 
             services.AddTransient<IEmployeeService, EmployeeService>();
             services.AddTransient<IPositionService, PositionService>();
