@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Holger",
+    "surname": "Göpfert",
+    "salary": 1500.0,
+    "hired": "0001-01-01T00:00:00",
+    "fired": "0001-01-01T00:00:00",
+    "positionId": 1,
+    "positionOfEpmloyee": null
+  },
+  {
+    "id": 2,
+    "name": "Steffen",
+    "surname": "Frommberger",
+    "salary": 1500.0,
+    "hired": "0001-01-01T00:00:00",
+    "fired": "0001-01-01T00:00:00",
+    "positionId": 2,
+    "positionOfEpmloyee": null
+  }
+]

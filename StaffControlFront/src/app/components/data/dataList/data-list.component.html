@@ -1,0 +1,52 @@
+<button class="left-button">Добавить Сотрудника</button>
+<button class="right-button">Добавить должность</button>
+<div >
+    
+    <table>
+        <tr>
+            <th>
+                #
+            </th>
+            <th>
+                Должность
+            </th>
+            <th>
+                Сотрудник
+            </th>
+            <th>
+                Оклад
+            </th>
+            <th>
+                Дата назначения
+            </th>
+            <th>
+                Дата увольнения
+            </th>
+        </tr>
+        <tr *ngFor='let u of dataModel'>
+            <td>
+                {{u.id}}
+            </td>
+            <td>
+                {{u.positionOfEpmloyee.positionName}}
+            </td>
+            <td>
+                {{u.name}} {{u.surname}}
+            </td>
+            <td>
+                {{u.salary}}$
+                
+            </td>
+            <td>
+                {{u.hired| date:'MM/dd/yyyy'}}
+                
+            </td>
+            <td>
+                {{u.fired| date:'MM/dd/yyyy'}}
+            </td>
+            
+        </tr>
+        
+    </table>
+</div>
+<!-- {"id":3,"name":"Иван","surname":"Петров","salary":2500.0,"hired":"0001-01-01T00:00:00","fired":"0001-01-01T00:00:00","positionId":2}] -->
